@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "txtContent": "@currentField",
+  "attributes": {
+    "class": "=if(@currentField <= @now - 2592000000,'sp-css-backgroundColor-BgDarkRed',if(@currentField <= @now + 2592000000, 'ms-bgColor-orange', if(@currentField > @now + 2592000000, 'sp-css-backgroundColor-BgGreen','')"
+  },
+  "style": {
+    "color": "white",
+    "padding-left": "10px"
+  }
+}
